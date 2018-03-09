@@ -17,16 +17,16 @@ private long id;
     private String name;
 
 	@OneToMany 
-	private List<Users> users;
+	private List<Employee> employee;
 
 	public Department(){
 	
 	}
 
-	public Department(Long id, String name, List<Users> users) {
+	public Department(Long id, String name, List<Users> employee) {
         this.id = id;
         this.name = name;
-        this.users = users;
+        this.employee = employee;
     }
 
 	 public Long getId() {
@@ -45,12 +45,27 @@ private long id;
         this.name = name;
     }
 
-    public List<Users> getUsers() {
-        return users;
+    public List<Employee> getEmployee() {
+        return employee;
     }
 
-    public void setUsers(List<Users> users) {
-        this.users = users;
+    public void setEmployee(List<Employee> employee) {
+        this.employee = employee;
+    }
+	
+	public static Finder<Long, Department> find = new Finder<Long, Department>(Department.class);
+
+    public static List<Department> findAll() {
+        return Department.find.query().where().orderBy("name asc").findList();
     }
 
+    public static Map<String, String> options() {
+        LinkedHashMap<String, String> options = new LinkedHashMap();
+
+        for (Department a: Department.findAll()) {
+            options.put(a.getId().toString(), a.getName());
+        }
+        
+        return options;
+    }
 }
