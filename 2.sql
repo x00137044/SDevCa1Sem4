@@ -1,0 +1,67 @@
+delete from employee;
+delete from project;
+delete from department;
+delete from address;
+
+insert into department (id, name) values ( 1, 'IT');
+insert into department (id, name) values ( 2, 'HR');
+insert into department (id, name) values ( 3, 'Sales');
+insert into department (id, name) values ( 4, 'Marketing');
+insert into department (id, name) values ( 5, 'Finance');
+
+insert into project (id,name,description,deadline) values ( 1,'A','Software Developement','June, 2018');
+insert into project (id,name,description,deadline) values ( 2,'B','Hiring Staff','May, 2018');
+insert into project (id,name,description,deadline) values ( 3,'C','Software Development','September, 2018');
+insert into project (id,name,description,deadline) values ( 4,'D','Marketing Product','July, 2018');
+insert into project (id,name,description,deadline) values ( 5,'E','Task Management','August, 2018');
+insert into project (id,name,description,deadline) values ( 6,'F','Product Testing','October, 2018');
+insert into project (id,name,description,deadline) values ( 7,'G','Account overview','November, 2018');
+
+insert into address (id, street, county) values (1, 'Mardyke Road', 'Cork');
+insert into address (id, street, county) values (2, 'Beaumont Road', 'Dublin');
+insert into address (id, street, county) values (3, 'Mitchel Street', 'Tipperary');
+insert into address (id, street, county) values (4, 'Thomas Street', 'Wexford');
+insert into address (id, street, county) values (5, 'Parklands Avenue', 'Dublin');
+insert into address (id, street, county) values (6, 'Dyke Road', 'Galway');
+insert into address (id, street, county) values (7, 'New Road', 'Clare');
+insert into address (id, street, county) values (8, 'Forest Avenue', 'Dublin');
+insert into address (id, street, county) values (9, 'Primrose Lane', 'Clare');
+insert into address (id, street, county) values (10, 'Mill Race', 'Leitrim');
+insert into address (id, street, county) values (11, 'James Street', 'Mayo');
+insert into address (id, street, county) values (12, 'Headford Road', 'Galway');
+insert into address (id, street, county) values (13, 'Capel Street', 'Dublin');
+insert into address (id, street, county) values (14, 'Belgard Road', 'Dublin');
+insert into address (id, street, county) values (15, 'Doyle Street', 'Waterford');
+insert into address (id, street, county) values (16, 'Claremont Estate', 'Navan');
+insert into address (id, street, county) values (17, 'Cock Hill', 'Cavan');
+insert into address (id, street, county) values (18, 'Edward Street', 'Kildare');
+insert into address (id, street, county) values (19, 'Marian Terrace', 'Kerry');
+insert into address (id, street, county) values (20, 'Pine Ridge', 'Wexford');
+insert into address (id, street, county) values (21, 'Whiterock view', 'Wexford');
+insert into address (id, street, county) values (22, 'Henry Street', 'Dublin');
+insert into address (id, street, county) values (23, 'Rockery Road', 'Wicklow');
+
+insert into employee (id,fname, lname ,department_id, address_id) values ( 1,'Tucker','Cooney', 1, 2);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 2,'Meadow','Adkins', 5, 14);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 3,'Issiah','Thomas', 3, 9);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 4,'Klay','Thompson', 4, 22);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 5,'Ben','Simmons', 2, 20);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 6,'Daniel','Smith', 2, 13);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 7,'Thomas','Brady', 5, 19);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 8,'Stephen','Carruth', 3, 8);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 9,'Michael','Harris', 4, 12);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 10,'Calvin','Hawkens', 1, 15);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 11,'Steven','Jefferson', 1, 1);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 12,'Linda','Bride', 5, 23);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 13,'Laura','Thornton',3 , 11);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 14,'Joseph','Barcoe', 4, 10);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 15,'James','Cannon', 2,7);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 16,'Eric','Mcgann', 4, 21);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 17,'Roisin','Beck', 5, 16);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 18,'Mark','Galagher', 1, 3);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 19,'Brian','Brendan', 3, 18);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 20,'Nathan','Hemsworth', 5, 5);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 21,'Chris','Gladwin', 2, 17);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 22,'Dwayne','Bosh', 5, 6);
+insert into employee (id,fname, lname ,department_id, address_id) values ( 23,'Andrew','Anderson', 1, 4);
+
